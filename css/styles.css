@@ -68,7 +68,7 @@ body {
   width: 320px;
   height: 320px;
   text-align: center;
-  background: url(/assets/hackers.png);
+  background: url(/assets/hackers.jpg);
   background-size: cover;
   border-bottom: 1px solid rgba(0,0,0,.15);
 }
