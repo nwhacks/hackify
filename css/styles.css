@@ -18,7 +18,7 @@ body {
 }
 
 #card {
-  background: url('/background.png');
+  background: url('background.jpg');
   background-size: cover;
   height: 100%;
   width: 100%;
