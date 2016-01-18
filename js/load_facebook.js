@@ -39,8 +39,8 @@ function loadFBProfileImage(fbid) {
   image.onload = function() {
     $('#placeholder').fadeOut();
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "#362487";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    /*ctx.fillStyle = "#362487";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);*/
     if (loadeds[1]) {
       var img = canvas.toDataURL('image/png');
       $("#download").attr("href", img);
@@ -53,7 +53,7 @@ function loadFBProfileImage(fbid) {
   newimage.crossOrigin = "Anonymous";
   newimage.src = 'hackoverlay.png';
   newimage.onload = function () {
-    ctx.globalCompositeOperation = "soft-light";
+    ctx.globalCompositeOperation = "overlay";
     ctx.drawImage(newimage, 0, 0, canvas.width, canvas.height);
     if (loadeds[0]) {
       var img = canvas.toDataURL('image/png');
