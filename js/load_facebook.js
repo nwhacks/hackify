@@ -35,7 +35,7 @@ function loadFBProfileImage(fbid) {
   ctx.globalCompositeOperation = "soft-light";
   var image = new Image();
   image.crossOrigin = "Anonymous";
-  image.src = "http://graph.facebook.com/" + fbid + "/picture?width=320&height=320";
+  image.src = "https://graph.facebook.com/" + fbid + "/picture?width=320&height=320";
   image.onload = function() {
     $('#placeholder').fadeOut();
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
