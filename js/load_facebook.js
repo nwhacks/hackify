@@ -53,7 +53,7 @@ function loadFBProfileImage(fbid) {
   newimage.crossOrigin = "Anonymous";
   newimage.src = 'hackoverlay.png';
   newimage.onload = function () {
-    ctx.globalCompositeOperation = "overlay";
+    ctx.globalCompositeOperation = "soft-light";
     ctx.drawImage(newimage, 0, 0, canvas.width, canvas.height);
     if (loadeds[0]) {
       var img = canvas.toDataURL('image/png');
