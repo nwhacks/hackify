@@ -1,48 +1,64 @@
+@font-face {
+  font-family: "LFT Etica";
+  src: url(../font/LFT_Etica_Book.otf) format("opentype"); }
+@font-face {
+  font-family: "LFT Etica";
+  src: url(../font/LFT_Etica_Semibold.otf) format("opentype");
+  font-weight: 500; }
+@font-face {
+  font-family: "LFT Etica";
+  src: url(../font/LFT_Etica_Bold.otf) format("opentype");
+  font-weight: bold; }
+@font-face {
+  font-family: "LFT Etica";
+  src: url(../font/LFT_Etica_BoldItalic.otf) format("opentype");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: "LFT Etica";
+  src: url(../font/LFT_Etica_Light.otf) format("opentype");
+  font-weight: 200; }
+@font-face {
+  font-family: "LFT Etica";
+  src: url(../font/LFT_Etica_LightItalic.otf) format("opentype");
+  font-weight: lighter;
+  font-style: italic; }
 canvas {
-	width: 320px;
-	height: 320px;
-}
+  width: 320px;
+  height: 320px; }
 
 /* Pink #e76482 */
 body {
   margin: 0px auto;
-  font-family: "Montserrat", sans-serif
-}
+  font-family: "LFT Etica", sans-serif;
+  background: url("../img/background.jpg") center center fixed;
+  background-size: cover; }
 
 #fb-btn {
-    text-align: center;
-}
+  text-align: center; }
 
 #fb {
-  display: none;
-}
+  display: none; }
 
 #card {
-  background: url('../background.jpg');
-  background-size: cover;
   height: 100%;
-  width: 100%;
-}
+  width: 100%; }
 
 #card > .container {
   position: relative;
   top: 50%;
-
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+  transform: translateY(-50%); }
 
 #card > .container > .content {
   width: 320px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 #card .segment {
   padding: 0;
   border-width: 0;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 #loading {
   position: absolute;
@@ -50,18 +66,14 @@ body {
   left: 0;
   right: 0;
   margin: 0 auto;
-
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-
   transition-duration: .5s;
-  opacity: 1;
-}
+  opacity: 1; }
 
 #loading.hidden {
-  opacity: 0;
-}
+  opacity: 0; }
 
 #pic-container {
   position: relative;
@@ -70,18 +82,15 @@ body {
   text-align: center;
   background: url(/assets/hackers.jpg);
   background-size: cover;
-  border-bottom: 1px solid rgba(0,0,0,.15);
-}
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
 
 #profile-pic {
   opacity: 1;
   transition-duration: 1s;
-  width: 100%;
-}
+  width: 100%; }
 
 #profile-pic.hidden {
-  opacity: 0;
-}
+  opacity: 0; }
 
 #pic-container .overlay {
   position: absolute;
@@ -89,58 +98,65 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  /*background: red;*/
-}
+  /*background: red;*/ }
+
+.ui.segment {
+  border-radius: 0; }
 
 #text {
   padding: 16px;
-  text-align: center;
-}
+  text-align: center; }
 
 #title, #subtitle {
-  font-family: 'Montserrat', 'Helvetica', sans-serif;
   letter-spacing: 5.5px;
   font-weight: 700;
   text-align: center;
-  color: #473899;
-}
+  color: #4BAE74; }
 
 #placeholder {
-	height: 320px;
-	width: 320px;
-	position: absolute;
-}
+  height: 320px;
+  width: 320px;
+  position: absolute; }
 
 #title {
   font-size: 2.5em;
   margin: 24px 0 18px;
-}
+  margin-top: 0;
+  border: 4px solid #4BAE74;
+  display: inline-block;
+  padding: 12px;
+  margin-bottom: 16px; }
 
 #subtitle {
   font-size: 1.5em;
   letter-spacing: 5.5px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 #text p {
   font-weight: 300;
   padding: 4px;
   font-size: 1.25em;
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 #info {
-  margin-bottom: 12px;
-}
+  margin-bottom: 12px; }
 
 .btn {
-	background: #e76482;
-	border: none;
-	color: white !important;
-	font-size: 1.2em;
-	padding: 12px 24px;
-}
+  background: #FF6B6B;
+  border: none;
+  color: white !important;
+  font-size: 1.2em;
+  padding: 12px 24px;
+  border-bottom: 4px solid #D74343;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 11px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase; }
 
 .btn.blue {
-	background: #4c82cc;
-}
+  background: #4C82CC;
+  border-color: #386EB8; }
+
+/*# sourceMappingURL=styles.css.map */
